@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | 捨てるものリスト (Sutemono List)</title>
+  <meta name="description" content="How 捨てるものリスト (Sutemono List) handles information.">
+  <link rel="alternate" hreflang="ja" href="./">
+  <link rel="alternate" hreflang="en" href="./index.en.html">
+  <style>
+    :root {
+      --bg: #f8f3ea; --card: #fffdf8; --ink: #3d3028; --sub: #7a6a5c; --line: #e6dccd;
+      --accent: #b86a24; --accent-soft: #f6e7d6; --focus: #2b6cb0;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #17151a; --card: #221f25; --ink: #f1ebe2; --sub: #b4a99c; --line: #3a3540;
+        --accent: #e9a25c; --accent-soft: #342a21; --focus: #8ab4f8; }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.8; overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, label:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+    .wrap { width: min(760px, 100%); margin: 0 auto; padding: 0 16px; }
+    .site-header { border-bottom: 1px solid var(--line); background: var(--card); }
+    .site-nav { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-height: 52px; padding: 8px 0; font-size: 14px; }
+    .site-nav a { text-decoration: none; font-weight: 600; }
+    .site-nav .home::before { content: "\2190\00a0"; }
+    .site-nav .lang { margin-left: auto; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; }
+    .site-nav .lang:hover { background: var(--accent-soft); }
+    main { padding: 36px 0 56px; }
+    .page-header { margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 4px; font-size: 15px; font-weight: 700; color: var(--accent); }
+    .eyebrow a { text-decoration: none; }
+    h1 { margin: 0; font-size: clamp(24px, 5.5vw, 32px); line-height: 1.3; }
+    .meta { margin: 10px 0 0; color: var(--sub); font-size: 14px; }
+    .lead { font-size: 17px; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 44px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+    h3 { font-size: 17px; line-height: 1.5; margin: 28px 0 6px; }
+    p, ul, ol { margin: 0 0 1em; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin: .3em 0; }
+    li > ul, li > ol { margin: .3em 0 .3em; }
+    strong { font-weight: 700; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 0 0 1em; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--accent-soft); font-weight: 700; }
+    .box { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 0 0 1.4em; }
+    .box > :first-child { margin-top: 0; }
+    .box > :last-child { margin-bottom: 0; }
+    .box ul, .box ol { margin-bottom: 0; }
+    .notice { border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; margin: 0 0 28px; font-size: 14px; color: var(--ink); }
+    .notice p { margin: 0; }
+    .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 0 0 14px; }
+    .card h2 { margin: 0 0 6px; padding: 0; border: 0; font-size: 19px; }
+    .card p { margin: 0 0 8px; color: var(--sub); }
+    .card p:last-child { margin: 0; }
+    .card a.more { font-weight: 700; text-decoration: none; }
+    .card a.more::after { content: "\00a0\2192"; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 0 0 1.4em; }
+    .gallery figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; display: block; }
+    .gallery figcaption { font-size: 12px; color: var(--sub); text-align: center; margin-top: 6px; }
+    .site-footer { border-top: 1px solid var(--line); padding: 20px 0 48px; color: var(--sub); font-size: 14px; }
+    .site-footer nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 10px; }
+    .site-footer nav a { text-decoration: none; font-weight: 600; }
+    .site-footer p { margin: 0; }
+    @media (max-width: 480px) {
+      body { font-size: 15.5px; }
+      main { padding-top: 28px; }
+      h2 { margin-top: 36px; }
+      table { display: block; overflow-x: auto; }
+    }
+    @media print {
+      .site-header, .site-footer nav { display: none; }
+      body { background: #fff; color: #000; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav wrap" aria-label="Site">
+      <a class="home" href="https://shirai-aka.github.io/">All apps</a>
+      <a class="lang" href="./" lang="ja" hreflang="ja">日本語</a>
+    </nav>
+  </header>
+  <main class="wrap" id="main">
+    <article>
+      <header class="page-header">
+        <p class="eyebrow"><a href="../index.en.html">捨てるものリスト (Sutemono List)</a></p>
+        <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: August 31, 2026</p>
+      </header>
+<div class="notice" role="note"><p>This English page is a reference translation of the Japanese original, provided for convenience. The Japanese text is the official version; where the two differ, the Japanese text applies.</p></div>
+<h2>Introduction</h2>
+    <p>“捨てるものリスト” (Sutemono List; the “App”) <strong>does not collect any</strong> personal information from users.</p>
+    <p>The App has no network communication functionality, and the data you enter never leaves the device.</p>
+    <h2>Information We Do Not Collect</h2>
+    <p>The App does not collect or transmit any of the following.</p>
+    <ul>
+      <li>Contact information such as name, email address or telephone number</li>
+      <li>Location information</li>
+      <li>The device’s advertising identifier or vendor identifier</li>
+      <li>Usage data, interaction logs or crash reports</li>
+      <li>Contacts, calendar, health information or other data on the device</li>
+    </ul>
+    <p>The App has no account registration feature.</p>
+    <h2>Information Stored on the Device</h2>
+    <p>The following information is stored only on the user’s device. It is never sent outside the device.</p>
+    <table>
+      <tr><th>What is stored</th><th>Where it is stored</th></tr>
+      <tr><td>Photos of items on hold or in the record</td><td>The App’s private area (Application Support)</td></tr>
+      <tr><td>Name, notes, deadline, hold status, how the item was let go</td><td>The App’s private database</td></tr>
+      <tr><td>Notification settings (on/off, notification time), default hold period</td><td>The device’s settings area (UserDefaults)</td></tr>
+    </table>
+    <p>These are deleted from the device when you delete the App.</p>
+    <p>Note that if you use the device’s backup feature (such as iCloud Backup), the App’s data may be included in that backup. This is a device-wide feature provided by Apple, not a sync performed independently by the App.</p>
+    <h2>Access to the Camera and Photos</h2>
+    <ul>
+      <li><strong>Camera</strong>: used to photograph the item you are putting on hold.</li>
+      <li><strong>Photo library</strong>: used to choose from your existing photos.</li>
+    </ul>
+    <p>Images that are taken or selected are shrunk and stored on the device. The App never reads your entire photo library or sends images outside the device. These permissions can be changed at any time from the device’s Settings app.</p>
+    <h2>Notifications</h2>
+    <p>To let you know that a deadline has arrived, the App uses local notifications that are handled entirely on the device. No server is involved in sending notifications. Notifications can be turned off at any time from the settings inside the App.</p>
+    <h2>In-App Purchases</h2>
+    <p>The App has an in-app purchase (one-time). The purchase is processed through Apple’s App Store, and purchase information is managed by Apple. The App’s developer never obtains or stores your payment information or purchase history.</p>
+    <h2>Third-Party Services</h2>
+    <p>The App does not include any third-party software development kits (SDKs) for advertising, access analytics, crash reporting or the like.</p>
+    <h2>Children’s Privacy</h2>
+    <p>The App is not aimed at any particular age group, but since it does not collect personal information in the first place, no information is transmitted regardless of age.</p>
+    <h2>Changes to This Policy</h2>
+    <p>If this policy is changed, this page will be updated and the last-updated date revised.</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a></p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Pages"><a href="../index.en.html">Top</a><a href="../support/index.en.html">Support</a><a href="../privacy-policy/index.en.html">Privacy Policy</a></nav>
+      <p>Contact: <a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a> · © Raimu Okano</p>
+    </div>
+  </footer>
+</body>
+</html>
